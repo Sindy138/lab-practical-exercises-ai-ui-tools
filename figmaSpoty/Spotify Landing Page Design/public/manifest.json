@@ -1,0 +1,24 @@
+{
+  "name": "Spotify - Music for everyone",
+  "short_name": "Spotify",
+  "description": "Listen to millions of songs and podcasts for free",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1DB954",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><circle cx='96' cy='96' r='96' fill='%231DB954'/><path d='M48 76.8 Q96 67.2 144 76.8' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M48 96 Q96 86.4 144 96' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M48 115.2 Q96 105.6 144 115.2' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='256' fill='%231DB954'/><path d='M128 204.8 Q256 179.2 384 204.8' stroke='white' stroke-width='16' fill='none' stroke-linecap='round'/><path d='M128 256 Q256 230.4 384 256' stroke='white' stroke-width='16' fill='none' stroke-linecap='round'/><path d='M128 307.2 Q256 281.6 384 307.2' stroke='white' stroke-width='16' fill='none' stroke-linecap='round'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
