@@ -1,0 +1,411 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover {
+  color: #1DB954;
+  border-bottom-color: #1DB954;
+}
+
+/* HERO SECTION */
+.hero {
+  margin-top: 80px;
+  background-image: url(/spotyCo/images/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideDown 0.8s ease;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+  animation: slideUp 0.8s ease 0.2s backwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FEATURES SECTION */
+.features-section {
+  background: white;
+  padding: 80px 0;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #1DB954;
+  margin: 20px auto 60px;
+  border-radius: 2px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: rgba(29, 185, 84, 0.03);
+  cursor: pointer;
+}
+
+.feature:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 50px rgba(29, 185, 84, 0.15);
+  background: rgba(29, 185, 84, 0.08);
+}
+
+.feature img {
+  height: 80px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover img {
+  transform: scale(1.1);
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* GREEN SECTION */
+.green-section {
+  background: #1DB954;
+  padding: 80px 0;
+  position: relative;
+}
+
+.green-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.text-content {
+  flex: 1;
+  color: white;
+}
+
+.text-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.underline-white {
+  width: 80px;
+  height: 3px;
+  background: white;
+  margin-bottom: 40px;
+  border-radius: 2px;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-item {
+  padding: 20px;
+  border-left: 4px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.info-item:hover {
+  border-left-color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.info-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.image-content {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.image-content img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.logo-bg {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.15;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.logo-bg img {
+  height: 250px;
+  width: auto;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .nav-wrapper {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .hero {
+    margin-top: 70px;
+    height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .green-section {
+    padding: 60px 0;
+  }
+
+  .green-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .logo-bg {
+    position: static;
+    opacity: 0.08;
+    transform: none;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .logo-bg img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav-wrapper {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 12px;
+  }
+
+  .hero {
+    margin-top: 150px;
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .features-section h2 {
+    font-size: 24px;
+  }
+
+  .feature {
+    padding: 25px 15px;
+  }
+
+  .feature img {
+    height: 60px;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+  }
+
+  .info-item {
+    padding: 15px;
+  }
+
+  .info-item h3 {
+    font-size: 16px;
+  }
+}

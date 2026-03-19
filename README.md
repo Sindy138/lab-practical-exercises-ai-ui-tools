@@ -41,8 +41,11 @@ You can also add Copilot to your VSCode environment.
 
 ### Discussion
 
-- What parts were helpful?
-- What required manual fixes?
+# - What parts were helpful? 
+- He is very good at HTML structure and creating classes that are consistent with the content.
+
+# What required manual fixes?
+- Nothing
 
 ## Exercise 2: AI‑Assisted CSS
 
@@ -66,9 +69,12 @@ Example prompt comment:
 
 Evaluate:
 
-- readability
-- performance
-- maintainability
+# readability
+- Regular
+# performance
+- Good performance
+# maintainability
+- Good
 
 ## Exercise 3: Retrospective Use
 
@@ -98,9 +104,9 @@ Learn how to present and defend your website in no more than 5 minutes.
 
 ### Questions:
 
-- When should developers rely on AI tools?
-- What risks exist in AI‑generated code?
-- Why is client‑server architecture essential for web apps?
+- When should developers rely on AI tools? For sketching, understanding cryptic errors, generating repetitive code (boilerplate), or when you're stuck with new logic. It's a copilot, not the captain.
+- What risks exist in AI‑generated code? Hallucinations (code that looks real but doesn't exist), security holes, copying outdated patterns, and, above all, ending up pasting something you don't understand.
+- Why is client‑server architecture essential for web apps? Porque separa las tareas. El servidor protege los datos y la lógica pesada, mientras que el cliente se encarga de que todo se vea bien y sea fluido para el usuario. Sin eso, no habría seguridad ni escalabilidad.
 
 ### Key takeaways
 
